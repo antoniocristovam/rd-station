@@ -1,6 +1,6 @@
-# Teste Técnico - Recomendador de Produtos RD Station
+# Recomendador de Produtos RD Station
 
-Este projeto é parte do teste técnico para a vaga de desenvolvedor front-end na RD Station. O objetivo principal é implementar a lógica de recomendação de produtos RD Station em uma aplicação web existente.
+Este projeto tem como objetivo implementar a lógica de recomendação de produtos da RD Station em uma aplicação web, demonstrando boas práticas de desenvolvimento front-end e integração com dados dinâmicos.
 
 ## Missão
 
@@ -71,7 +71,7 @@ Para completar este teste, você deve concentrar-se principalmente em três arqu
 
 1. Clone o repositório: `git clone <URL_DO_REPOSITORIO>`
 2. Instale as dependências: `yarn install`
-3. Para instalar o projeto, execute o script `./install.sh` 
+3. Para instalar o projeto, execute o script `./install.sh`
 4. Inicie a aplicação: `yarn start`
 
 ### Scripts Disponíveis
