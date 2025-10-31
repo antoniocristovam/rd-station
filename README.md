@@ -1,3 +1,9 @@
+## Relatório de Testes
+
+Um relatório com os testes realizados e seus resultados está disponível no arquivo `test-report.md` na raiz do repositório.
+
+Veja o relatório aqui: [Relatório de Testes](./test-report.md)
+
 # Recomendador de Produtos RD Station
 
 Este projeto tem como objetivo implementar a lógica de recomendação de produtos da RD Station em uma aplicação web, demonstrando boas práticas de desenvolvimento front-end e integração com dados dinâmicos.
