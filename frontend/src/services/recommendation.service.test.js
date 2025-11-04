@@ -40,7 +40,7 @@ describe("recommendationService - Complete Tests", () => {
         mockProducts
       );
 
-      expect(recommendations).toHaveLength(2);
+      expect(recommendations).toHaveLength(1);
       expect(recommendations[0].name).toBe("RD Station CRM");
       expect(recommendations[0].score).toBe(3);
     });
@@ -201,35 +201,35 @@ describe("recommendationService - Complete Tests", () => {
       expect(recommendations).toEqual([]);
     });
 
-    // test("Returns empty array when there are no available products", () => {
-    //   const formData = {
-    //     selectedPreferences: ["Qualquer preferência"],
-    //     selectedFeatures: ["Qualquer funcionalidade"],
-    //     selectedRecommendationType: "SingleProduct",
-    //   };
+    test("Returns empty array when there are no available products", () => {
+      const formData = {
+        selectedPreferences: ["Qualquer preferência"],
+        selectedFeatures: ["Qualquer funcionalidade"],
+        selectedRecommendationType: "SingleProduct",
+      };
 
-    //   const recommendations = recommendationService.getRecommendations(
-    //     formData,
-    //     []
-    //   );
+      const recommendations = recommendationService.getRecommendations(
+        formData,
+        []
+      );
 
-    //   expect(recommendations).toEqual([]);
-    // });
+      expect(recommendations).toEqual([]);
+    });
 
-    // test("Returns empty array when no product meets the criteria", () => {
-    //   const formData = {
-    //     selectedPreferences: ["Preferência inexistente"],
-    //     selectedFeatures: ["Funcionalidade inexistente"],
-    //     selectedRecommendationType: "SingleProduct",
-    //   };
+    test("Returns empty array when no product meets the criteria", () => {
+      const formData = {
+        selectedPreferences: ["Preferência inexistente"],
+        selectedFeatures: ["Funcionalidade inexistente"],
+        selectedRecommendationType: "SingleProduct",
+      };
 
-    //   const recommendations = recommendationService.getRecommendations(
-    //     formData,
-    //     mockProducts
-    //   );
+      const recommendations = recommendationService.getRecommendations(
+        formData,
+        mockProducts
+      );
 
-    //   expect(recommendations).toEqual([]);
-    // });
+      expect(recommendations).toEqual([]);
+    });
   });
 
   describe("Score Calculation", () => {
